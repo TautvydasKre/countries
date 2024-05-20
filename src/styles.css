@@ -1,0 +1,156 @@
+/** @format */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #929292;
+}
+
+.main-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff4d2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.flags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.flags img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #dcf7f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.africa {
+  background: linear-gradient(to bottom right, #f9c74f, #f4a261);
+}
+
+.card.americas {
+  background: linear-gradient(to bottom right, #f94144, #f3722c);
+}
+
+.card.asia {
+  background: linear-gradient(to bottom right, #43aa8b, #90be6d);
+}
+
+.card.europe {
+  background: linear-gradient(to bottom right, #577590, #6d597a);
+}
+
+.card.oceania {
+  background: linear-gradient(to bottom right, #0077b6, #90e0ef);
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.region-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.region-buttons button {
+  padding: 8px 16px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.region-buttons button.active {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.region-buttons button:hover {
+  background-color: #ccc;
+}
+
+.country-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flag-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.country-details {
+  margin-top: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #ce77b8;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-content {
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #f75454;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.close:hover {
+  background-color: #ff0000;
+}
+
+.modal-flag {
+  width: 100px;
+  height: auto;
+}
